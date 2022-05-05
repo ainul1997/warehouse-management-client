@@ -8,12 +8,12 @@ const Production = () => {
         fetch('http://localhost:5000/production')
             .then(res => res.json())
             .then(data => setProduction(data))
-    }, [])
+    }, []);
     return (
         <div className='container'>
             <div className='mt-4 flex d-flex align-items-center mb-5'>
                 <h3 className='fw-bolder'> COLLECTION PRODUCTS </h3>
-                <div style={{ width: '60%', height: '1px', margin: '5px', marginLeft: '20px', backgroundColor: '#ADAEAE' }} ></div>
+                <div style={{ width: '40%', height: '1px', margin: '5px', marginLeft: '20px', backgroundColor: '#ADAEAE' }} ></div>
             </div>
 
             <div className="production-callection " >

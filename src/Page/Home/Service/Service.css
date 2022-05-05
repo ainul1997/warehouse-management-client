@@ -1,0 +1,17 @@
+.content-box {
+    border: 1px solid #ADAEAE;
+    height: 150px;
+}
+
+.border-box {
+    background-color: #ADAEAE;
+    height: 5px;
+}
+
+.content-box:hover {
+    background-color: beige;
+    z-index: 1;
+    transform: scale(1.05);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, .5);
+
+}
