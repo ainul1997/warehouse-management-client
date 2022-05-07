@@ -8,7 +8,7 @@ const Production = () => {
         fetch('http://localhost:5000/production')
             .then(res => res.json())
             .then(data => setProduction(data))
-    }, []);
+    }, [production]);
     return (
         <div className='container'>
             <div className='mt-4 flex d-flex align-items-center mb-5'>

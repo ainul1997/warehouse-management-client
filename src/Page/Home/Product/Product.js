@@ -1,8 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Product.css'
 
 const Product = ({ product }) => {
-    const { _id, name, img, description, price } = product;
+    const { _id, name, img, description, price, quantity } = product;
+
+    const navigate = useNavigate();
+    const navigateToProductionDetail = _id => {
+        navigate(`/production/${_id}`)
+    }
     return (
 
         <div className='container'>
@@ -13,10 +19,15 @@ const Product = ({ product }) => {
                 <div className='content'>
                     <div>
                         <h2 className='fw-bolder'>{name}</h2>
-                        <p className='fw-lighter'>Price: {price}</p>
-                        <p className='text-capitalize fw-lighter'> {description}</p>
+                        <p className=''>Price:$ {price}</p>
+                        <p className=''>Quantity: {quantity}</p>
+                        <p className=''> {description}</p>
+                        <div className="d-flex justify-content-center">
+                            <button onClick={() => navigateToProductionDetail(_id)} className='btn '>MANAGE</button>
+                        </div>
                     </div>
                 </div>
+
             </div>
 
         </div>
