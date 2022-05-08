@@ -53,7 +53,7 @@ const Header = () => {
                             <div className=' nav_divider rounded-circle '></div>
                             <Nav.Link className='text-light fw-bolder' as={Link} to="services">Services</Nav.Link>
                             <div className=' nav_divider rounded-circle'></div>
-                            <Nav.Link className='text-light fw-bolder' as={Link} to="about">About Us</Nav.Link>
+                            <Nav.Link className='text-light fw-bolder' as={Link} to="manage">Manage Inventories</Nav.Link>
                             <div className=' nav_divider rounded-circle'></div>
                             <Nav.Link className='text-light fw-bolder' as={Link} to="shop">Shop</Nav.Link>
                             <div className=' nav_divider rounded-circle'></div>

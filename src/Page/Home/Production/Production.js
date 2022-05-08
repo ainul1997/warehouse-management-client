@@ -3,12 +3,13 @@ import Product from '../Product/Product';
 import './Production.css'
 const Production = () => {
     const [production, setProduction] = useState([]);
+    const [size, setSize] = useState();
 
     useEffect(() => {
-        fetch('http://localhost:5000/production')
+        fetch(`http://localhost:5000/production?size=${size}`)
             .then(res => res.json())
             .then(data => setProduction(data))
-    }, [production]);
+    }, [size]);
     return (
         <div className='container'>
             <div className='mt-4 flex d-flex align-items-center mb-5'>
@@ -20,6 +21,12 @@ const Production = () => {
                 {
                     production.map(product => <Product key={product._id} product={product}></Product>)
                 }
+            </div>
+            <div>
+                <div onChange={e => setSize(e.target.value)}>
+                    <div value="6"></div>
+
+                </div>
             </div>
 
 
