@@ -1,17 +1,25 @@
-import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import useProductionDetils from '../../Hooks/UseProduction/useProductionDetils';
-
-
+import React, { useEffect, useState } from 'react';
 
 
 
 const ProductionDetail = () => {
     const { productionId } = useParams();
+    const [products, setProducts] = useState({});
+
+    useEffect(() => {
+        const url = `http://localhost:5000/production/${productionId}`;
+        fetch(url)
+            .then(res => res.json())
+            .then(data => setProducts(data));
+    }, [])
+
 
     return (
         <div>
-            <h1> {productionId}</h1>
+            <div>
+                <img src={products.img} alt="" />
+            </div>
 
         </div>
 

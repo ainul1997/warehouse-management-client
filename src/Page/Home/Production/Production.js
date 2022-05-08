@@ -3,13 +3,13 @@ import Product from '../Product/Product';
 import './Production.css'
 const Production = () => {
     const [production, setProduction] = useState([]);
-    const [size, setSize] = useState();
+
 
     useEffect(() => {
-        fetch(`http://localhost:5000/production?size=${size}`)
+        fetch(`https://whispering-atoll-96026.herokuapp.com/production`)
             .then(res => res.json())
             .then(data => setProduction(data))
-    }, [size]);
+    }, []);
     return (
         <div className='container'>
             <div className='mt-4 flex d-flex align-items-center mb-5'>
@@ -19,19 +19,15 @@ const Production = () => {
 
             <div className="production-callection " >
                 {
-                    production.map(product => <Product key={product._id} product={product}></Product>)
+                    production.slice(0, 6).map(product => <Product key={product._id} product={product}></Product>)
                 }
             </div>
-            <div>
-                <div onChange={e => setSize(e.target.value)}>
-                    <div value="6"></div>
-
-                </div>
-            </div>
-
-
 
         </div>
+
+
+
+
     );
 };
 
