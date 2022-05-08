@@ -29,9 +29,7 @@ const SocialLogin = () => {
 
     return (
         <div>
-
-
-            <div className=''>
+            <div >
                 <button
                     onClick={signInWithGoogle}
                     className='btn border rounded   d-block mx-auto my-2'>

@@ -5,7 +5,6 @@ import { Button, Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import './Login.css'
-
 import SocialLogin from '../../Shard/Social/SocialLogin';
 
 
