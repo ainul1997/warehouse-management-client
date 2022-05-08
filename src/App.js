@@ -13,6 +13,9 @@ import Login from './Page/Login/Login/Login';
 import ProductionDetail from './Page/ProductionDetail/ProductionDetail';
 import Register from './Page/Login/Register/Register';
 import ManageInvan from './Page/Home/ManageInvan/ManageInvan';
+import RequirAuth from './Page/RequirAuth/RequirAuth';
+import Blogs from './Page/Blogs/Blogs';
+import NotFound from './Page/NotFound/NotFound';
 
 
 function App() {
@@ -22,15 +25,16 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
-        <Route path='/production/:productionId' element={<ProductionDetail></ProductionDetail>}></Route>
+        <Route path='/production/:productionId' element={
+          <RequirAuth><ProductionDetail></ProductionDetail></RequirAuth>
+        }></Route>
         <Route path='/services' element={<Services></Services>}></Route>
         <Route path='/manage' element={<ManageInvan></ManageInvan>}></Route>
         <Route path='/contact' element={<ContactUs></ContactUs>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
-
-
-
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+        <Route path='/*' element={<NotFound></NotFound>}></Route>
 
       </Routes>
       <Footer></Footer>

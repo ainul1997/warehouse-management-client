@@ -3,7 +3,7 @@ import './AboutUs.css'
 
 const AboutUs = () => {
     return (
-        <div className='About-callection mt-5'>
+        <div style={{ paddingBottom: '50px' }} className='About-callection mt-5 mb-5'>
             <div className=' '>
                 <div className='mt-4 flex d-flex align-items-center '>
                     <h3 className='fw-bolder ms-5'> ABOUT US </h3>

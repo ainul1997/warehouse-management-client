@@ -29,18 +29,14 @@ const SocialLogin = () => {
 
     return (
         <div>
-            <div className='d-flex align-items-center'>
-                <div style={{ height: '1px' }} className='bg-primary w-50'></div>
-                <p className='mt-2 px-2'>or</p>
-                <div style={{ height: '1px' }} className='bg-primary w-50'></div>
-            </div>
+
 
             <div className=''>
                 <button
                     onClick={signInWithGoogle}
-                    className='btn btn-info w-50 d-block mx-auto my-2'>
+                    className='btn border rounded   d-block mx-auto my-2'>
                     <img style={{ width: '30px' }} alt="" />
-                    <span className='px-2'>Google Sign In</span>
+                    <span className='px-2 '>Google Sign In <img height={'30px'} src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png" alt="" /></span>
                 </button>
             </div>
         </div>

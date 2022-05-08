@@ -57,7 +57,7 @@ const Header = () => {
                             <div className=' nav_divider rounded-circle'></div>
                             <Nav.Link className='text-light fw-bolder' as={Link} to="shop">Shop</Nav.Link>
                             <div className=' nav_divider rounded-circle'></div>
-                            <Nav.Link className='text-light fw-bolder' as={Link} to="news">News</Nav.Link>
+                            <Nav.Link className='text-light fw-bolder' as={Link} to="blogs">Blogs</Nav.Link>
                             <div className=' nav_divider rounded-circle'></div>
                             <Nav.Link className='text-light fw-bolder' as={Link} to="contact">Contact Us</Nav.Link>
 
