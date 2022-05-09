@@ -8,7 +8,7 @@ const ProductionDetail = () => {
     const [products, setProducts] = useState({});
 
     useEffect(() => {
-        const url = `http://localhost:5000/production/${productionId}`;
+        const url = `https://whispering-atoll-96026.herokuapp.com/production/${productionId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setProducts(data));

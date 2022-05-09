@@ -17,12 +17,15 @@ import RequirAuth from './Page/RequirAuth/RequirAuth';
 import Blogs from './Page/Blogs/Blogs';
 import NotFound from './Page/NotFound/NotFound';
 import AddItems from './Page/Home/Home/AddItems/AddItems';
+import { Toaster } from 'react-hot-toast';
+import MyItem from './Page/Home/MyItem/MyItem';
 
 
 function App() {
   return (
     <div>
       <Header></Header>
+      <Toaster />
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
@@ -36,6 +39,7 @@ function App() {
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/addItems' element={<AddItems></AddItems>}></Route>
+        <Route path='/myItems' element={<MyItem></MyItem>}></Route>
         <Route path='/*' element={<NotFound></NotFound>}></Route>
 
       </Routes>
