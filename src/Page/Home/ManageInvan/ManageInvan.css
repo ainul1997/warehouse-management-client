@@ -123,6 +123,7 @@
 @media only screen and (max-width:576px) {
     .production-callection {
         grid-template-columns: repeat(1, 1fr);
+        margin: 30px;
     }
 }
 

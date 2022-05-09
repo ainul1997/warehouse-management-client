@@ -62,7 +62,7 @@ const Header = () => {
                             <Nav.Link className='text-light fw-bolder' as={Link} to="contact">Contact Us</Nav.Link>
 
                         </Nav>
-                        <Nav>
+                        <Nav className="me-auto d-flex align-items-center">
 
                             {
                                 user && <>

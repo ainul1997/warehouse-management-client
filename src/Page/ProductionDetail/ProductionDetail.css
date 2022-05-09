@@ -1,23 +1,24 @@
-.About-callection {
+.production-detils {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-}
 
-.About-callection p {
-    font-size: small;
 }
 
 
 @media only screen and (max-width:576px) {
-    .About-callection {
+    .production-detils {
         grid-template-columns: repeat(1, 1fr);
 
+
+    }
+
+    .add-item {
+        margin-bottom: 100px;
     }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 992px) {
-    .About-callection {
+    .production-detils {
         grid-template-columns: repeat(2, 1fr);
     }
 }

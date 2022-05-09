@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
+import './ProductionDetail.css'
 
 
 
@@ -16,8 +17,8 @@ const ProductionDetail = () => {
 
 
     return (
-        <div className='d-flex justify-content-center'>
-            <div style={{ height: '550px', width: '800px' }} className=' d-flex justify-content-center border m-5'>
+        <div className='d-flex justify-content-center '>
+            <div style={{ height: '550px', width: '800px' }} className=' production-detils border m-5'>
                 <div className='mt-3 ms-3 '>
                     < img style={{ height: '500px', width: '300px' }} src={products.img} alt="" />
                 </div>
@@ -29,7 +30,7 @@ const ProductionDetail = () => {
                     <div className='d-flex justify-content-center '>
                         <button className='btn border rounded '>Delivered</button>
                     </div>
-                    <div className='mt-5 mx-5 '>
+                    <div className='mt-5 mx-5 add-item '>
                         <form className=' mx-5'>
                             <input type="text" />
                             <div className='d-flex justify-content-center mt-2 '>
