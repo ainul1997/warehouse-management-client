@@ -16,6 +16,7 @@ import ManageInvan from './Page/Home/ManageInvan/ManageInvan';
 import RequirAuth from './Page/RequirAuth/RequirAuth';
 import Blogs from './Page/Blogs/Blogs';
 import NotFound from './Page/NotFound/NotFound';
+import AddItems from './Page/Home/Home/AddItems/AddItems';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+        <Route path='/addItems' element={<AddItems></AddItems>}></Route>
         <Route path='/*' element={<NotFound></NotFound>}></Route>
 
       </Routes>
